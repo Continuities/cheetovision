@@ -16,8 +16,6 @@
 
   while (walker.nextNode()) {
     walker.currentNode.nodeValue = walker.currentNode.nodeValue
-        .replace(drumfMatcher, ()=>{
-          return ALT_NAMES[Math.floor(Math.random() * ALT_NAMES.length)];
-        });
+        .replace(drumfMatcher, ()=> ALT_NAMES[Math.floor(Math.random() * ALT_NAMES.length)]);
   }
 })(document);
