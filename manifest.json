@@ -11,7 +11,7 @@
       "48": "icon-48.png",
       "128": "icon-128.png"
     },
-    "default_title": "Trumpoon"
+    "default_title": "Cheetovision"
   },
   "permissions": [
     "activeTab"
@@ -22,7 +22,7 @@
       "https://*/*"
     ],
     "js": [
-      "trumpoon.js"
+      "cheetovision.js"
     ],
     "run_at": "document_end"
   }]
