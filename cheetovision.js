@@ -4,7 +4,7 @@
   console.info("Enabling Cheetovision");
 
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-  const drumfMatcher = /(Donald )?((J\.|John) )?Trump/g;
+  const drumfMatcher = /(^| )(Donald )?((J\.|John) )?Trump/g;
   const ALT_NAMES = [
     "Cheeto Mussolini",
     "Pumpkin Pinochet",
@@ -16,6 +16,6 @@
 
   while (walker.nextNode()) {
     walker.currentNode.nodeValue = walker.currentNode.nodeValue
-        .replace(drumfMatcher, ()=> ALT_NAMES[Math.floor(Math.random() * ALT_NAMES.length)]);
+        .replace(drumfMatcher, (match) => (match[0] === ' ' ? ' ' : '') + ALT_NAMES[Math.floor(Math.random() * ALT_NAMES.length)]);
   }
 })(document);
