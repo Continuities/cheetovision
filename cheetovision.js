@@ -1,7 +1,7 @@
 (function(document) {
   'use strict';
 
-  console.info("Firing the Trumpoon");
+  console.info("Enabling Cheetovision");
 
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
   const drumfMatcher = /(Donald )?((J\.|John) )?Trump/g;
