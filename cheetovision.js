@@ -10,7 +10,7 @@
     "Pumpkin Pinochet",
     "Pol Apricot",
     "Orange Julius",
-    "Mao ZeTang",
+    "Mao Tse-Tang",
     "The Yamchurian Candidate"
   ];
 
